@@ -12,8 +12,8 @@ class HomeTab extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            Color.fromARGB(255, 211, 118, 130),
-            Color.fromARGB(255, 253, 181, 168)
+            Color.fromARGB(255, 203, 236, 241),
+            Colors.lightBlueAccent
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight
@@ -32,7 +32,10 @@ class HomeTab extends StatelessWidget {
               backgroundColor: Colors.transparent,
               elevation: 0.0,
               flexibleSpace: FlexibleSpaceBar(
-                title: const Text('Novidades'),
+                title: const Text('Novidades',
+                style: TextStyle(
+                  color: Colors.black
+                ),),
                 centerTitle: true,
               ),
             ),
